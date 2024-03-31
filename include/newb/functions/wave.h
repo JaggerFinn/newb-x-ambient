@@ -16,7 +16,7 @@ void lanternWave(
 
   // fix for non-hanging lanterns waving top part (works only if texPosY is correct)
   if (y5625 && (texPosY < 0.3 || (texPosY>0.55 && texPosY<0.69))) {
-    isLantern = false;
+    isLantern = true;
   }
 
   if (uv1.x > 0.6 && (isChain || isLantern)) {
